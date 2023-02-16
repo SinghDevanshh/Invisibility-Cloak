@@ -40,9 +40,9 @@ while(True):
     # Using cvtColor function to convert to colorspace : -
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
     
-    # Lower Bound of the color desired for the Cloak [Currently set to make the McMaster CS hoodie invisible]
+    # Lower Bound of the color desired for the Cloak [Currently set to make the colour green invisible]
     lower_bound = np.array([50, 80, 50])
-    # Upper Bound of the color desired for the Cloak [Currently set to make the McMaster CS hoodie invisible]
+    # Upper Bound of the color desired for the Cloak [Currently set to make the colour green invisible]
     upper_bound = np.array([90, 255, 255])
     
     # mask is the region where the colour is in the colour range defined above 
